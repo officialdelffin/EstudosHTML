@@ -71,13 +71,12 @@
 
         </p>
 
+
+    <hr>
+
     <h3> Estudos de Tags</h3>
 
         <p>
-
-            <hr>
-
-            <br>
 
             <strong> que são tags: </strong>
 
@@ -86,16 +85,11 @@
             Tags são comandos usados no HTML para definir a estrutura e o conteúdo de uma página web. Elas indicam ao navegador como exibir textos, imagens, links, títulos, 
             parágrafos e outros elementos. Normalmente, uma tag tem uma abertura e um fechamento, envolvendo o conteúdo que será exibido.
 
-            <br><br>
+            <br>
 
         </p>
 
         <p>
-
-            
-            <hr>
-
-            <br>
 
             <strong> Tipos de tags </strong>
 
@@ -111,13 +105,228 @@
             Tag sup - Coloca o texto em posição superior, como em potências. <br>
             Tag sub - Coloca o texto em posição inferior, como em fórmulas químicas. <br>
             Tag hr -  Cria uma linha horizontal de separação entre conteúdos. <br>
-            Tag br -  Quebra a linha, fazendo o texto continuar na linha de baixo. <br>
+            Tag br -  Quebra a linha, fazendo o texto continuar na linha de baixo. <br> 
+
+            <br>
+
+            
+
+        </p>
+
+        <hr>
+
+    <h3>Estudos de link absoluto (URL absoluta)</h3>
+
+        <p>
+
+            No HTML é possivél configurar elementos que ao clicar neles, eles abrem outra pagina na web.
+
+            <br><br>
+
+            Para defininr um link a um elemneto deve se usar a tag <strong>a</strong> junto com o atributo da tag que é o <strong>href</strong>.
+
+            <br><br>
+
+            Aqui a um texto clicavel que direciona para o site do google mais para mostrar como funciona:
+
+            
+            <br><br>
+            <a href="https://google.com">Ir para o site do Google</a>
+            <br>
+            
+
+            <br>
+
+            Na opção acima ele abre o site do Google, mas ele abre na mesma aba onde o site esta aberto. Caso queira colocar em outra aba 
+            deve utilizar o atributo <strong>target</strong> junto com o <strong>_blank</strong>.
+            
+            <br><br>
+
+            <b>Exemplo :</b>
+
+            <br><br>
+
+            <a href="https://google.com" target="_blank" >Ir para o site do google em uma nova aba</a>
+
+            <br><br>
+
+        </p>
+
+    <hr>
+    
+    <h3>Estudos Link relativo (URL relativa)</h3>
+
+        <p>
+
+            Os links raltivos são um pouco diferentes dos links absolutos. Eles fazem a navegação dentro de pastas e arquivos que estão dentro do projeto
+            <br><br>
+
+            Para que tenha a naveganção entre essas pastas e arquivos tambem ultilizamos a tag a junto com o atributo href, mas no lugar de colocarmos a url do site colocamos o caminho da pasta 
+
+            <br><br>
+
+            <b>Exemplo :</b>
+
+            <br><br>
+            
+            nomeDaPasta/nomeDoArquivo
+
+            <br><br>
+
+            Para voltar não basta apenas colocar o nome da pasta anterior, ela funcionara assim somente se o arquivo estiver na mesma pasta
+            , se tiver em pastas diferentes deve voltar a pasta ate chegar ao local desejado.
+
+            <br><br>
+
+            <strong>Exemplo : </strong>
+
+            <br><br>
+
+            ../nomeDoArquivo
+
+        </p>
+
+        <br>
+
+        <hr>
+
+    <h3>Estudos de Imagens</h3>
+
+        <p>
+
+            Para colocar imagens em site ultilizanmos a tag <strong>img</strong> com o atributo <strong>src</strong> que é o que localiza a imagem. 
+            A imagem pode ser localizada atravez de uma url ( Não muito indicado ) e tambem em aquivos do projeto do mesmo jeito que faz para abrir pastas e arquivos com a tag a.
+
+            <br><br>
+
+            Para definir o tamanho da imagem nós ultilizamos os atributos <strong>width</strong> e <strong>height</strong>, e o tamanho da imagem é dividida em pixels.
+
+            <br><br>
+
+            <b>Exemplo ultilizando imagem do projeto : </b>
+
+            <br><br>
+
+            <a href="https://www.google.com/search?q=guts&oq=guts&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyBwgBEC4YgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEC4YgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQgxNDk0ajBqN6gCCLACAfEF-Oc7c2mJqSQ&sourceid=chrome&ie=UTF-8">
+
+                <img src="img/guts.jpg " width="300">
+
+            </a>
+
+            
+                
+
+        </p>
+
+        <br>
+
+        <hr>
+
+        <br>
+
+        <h3>Estudos de tabelas</h3>
+
+            <p>
+
+                Em HTML, a tag table é usada para criar tabelas. Cada linha é definida com tr, os títulos das colunas com th e os dados com td. 
+                O th aparece em negrito e centralizado, enquanto o td exibe os dados normalmente.
+
+                <br><br>
+
+                Para fazer os espaços entre os elementos da tabela usamos o width e a porcetagem. E para colocar bordas na tabela usamos o border e um numero da grossura da borda.
+
+                <br><br>
+
+                <b>Exemplo que como fica a tabela no final :</b>  
+                
+                <br>
+
+            </p>
+
+            <table width="100%" border="1">
+
+                <tr>
+
+                    <th>Nome</th>
+                    <th>Empresa</th>
+                    <th>Profissão</th>
+
+                </tr>
+
+                <tr>
+
+                    <td>Lucas</td>
+                    <td>Picpay</td>
+                    <td>Desenvolvedor Android</td>
+
+
+                </tr>
+
+                <tr>
+
+                    <td>Kerlon</td>
+                    <td>ParceladoUSA</td>
+                    <td>Desenvolvedor backend</td>
+
+                </tr>
+
+            </table>
 
             <br><br>
 
             <hr>
 
-        </p>
+            <br>
+
+            <h3>Estudos de listas ordenadas e não ordenadas</h3>
+
+                <br>
+
+                <h4>Listas ordenadas</h4>
+
+                    <p>
+
+                        No HTML, lista ordenada é uma lista em que os itens aparecem em uma ordem numérica (1, 2, 3...). Usa-se a tag ol (ordered list).
+
+                        <br><br>
+
+                        <B>Exemplo :</B>
+
+                    </p>
+
+                    <ol>
+
+                        <li>Arroz</li>
+                        <li>feijão</li>
+                        <li>Frutas</li>
+                        <li>Carne</li>
+
+                    </ol>
+                    
+                    
+
+                <h4>Listas não ordenadas</h4>
+
+                    <p>
+
+                        Já a lista desordenada mostra os itens com marcadores (bolinhas) sem seguir ordem. Usa-se a tag ul (unordered list).
+
+                        <B>Exemplo :</B>
+
+                    </p>
+
+                    <ul>
+
+                        <li>Arroz</li>
+                        <li>feijão</li>
+                        <li>Frutas</li>
+                        <li>Carne</li>
+
+                    </ul>
+            
+            <br>
+            <hr>
+        
 
 </body>
 
