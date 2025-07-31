@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Titulo da pagina -->
+    <h1>Seja bem vindo aos estudos de formularios</h1>
+
+        <!-- Acesso a pagina anterior -->
+        <a href="index.html">Voltar a pagina principal</a>
+
+        <p>
+
+
+            <!-- Explicação sobre formulario -->
+            Nos formularios é possivel fazer a interação com o usuario e uma das funções do formulario é permitir que o usuario faça o input de algo no site como texto dentro outros, mas para isso deve se utilizar a tag input junto com o seu atributo type que define o tipo do input.
+
+            No input tambem é possivel definir um hint, que indica ao usuário o que ele deve inserir naquele input, e para definir esse input ultilizamos o placehloder.
+            
+            <br><br>
+
+            Para definir um nome para o input é necessario usar a tag label, onde você define o nome da caixa de entrada. Com o nome da caixa de entrada definida, também é possivél fazer um evento de clique, onde ao clicar no nome ele abre a caixa de entrada e deixa você escrever, mas para isso deve-se usar o atributo id no input junto com o for no label.
+            
+            <br><br>
+
+            O que seria um cadatros sem um botão que envie o dados? Para criar um botao que envie os dados ultilizamos a tag input com o tipo submit para definir que é um buttom e com o atributo value para definir o nome do botao.
+
+            <br><br>
+
+            <hr>
+            <br>
+
+            <b>Exemplo de input com hint e do tipo text sem nome:</b>
+
+        </p>
+
+        <form>
+
+            <!-- Input de explicação sem nome -->
+            <input type="text" placeholder="Digite um texto aqui :">
+
+        
+
+            <br><br>
+            <hr>
+        
+            <p>
+
+                <b>Exemplo de input com nome e evento de clique com direcionamento :</b>
+
+            </p>
+
+            <!-- Input de explicão com nome -->
+            <label for="id_input">Nome do Input :</label> 
+            <input id="id_input" type="text" placeholder="Digite um texto aqui">
+
+        </form>
+
+        <br><br>
+
+        <hr>
+
+        <form>
+
+            
+            <p>
+
+                <b>Simulação de um cadatros em um site :</b>
+
+            </p>
+            
+            <!-- Input de nome -->
+            <label for="id_nome">Nome</label>
+            <input id="id_nome" type="text" placeholder="Digite o seu nome :">
+
+        
+
+            <br>
+
+        
+
+            <!-- Input de email -->
+            <label for="id_email">Email</label>
+            <input type="email"  id="id_email" placeholder="Digite o seu email :">
+
+       
+
+            <br>
+
+            <!-- Input senha -->
+            <label for="id_senha">Senha</label>
+            <input type="password" id="id_senha" placeholder="Digite a sua senha :">
+
+            <br><br>
+
+            <!-- Input botão input -->
+            <input type="submit" value="Enviar cadastro">
+
+            <br><br>
+            <hr>
+
+        </form>
+
+
+</body>
+</html>
