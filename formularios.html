@@ -31,6 +31,10 @@
 
             <br><br>
 
+            Para obrigar que um usuario escreva todos os dados que precisam ser preenchidos usando dentro da tag input o atributo required, que não deixa os dados serem enviados caso ele não esteja preenchido.
+
+            <br><br>
+
             <hr>
             <br>
 
@@ -75,7 +79,7 @@
             
             <!-- Input de nome -->
             <label for="id_nome">Nome</label>
-            <input id="id_nome" type="text" placeholder="Digite o seu nome :">
+            <input id="id_nome" type="text" placeholder="Digite o seu nome :" required>
 
         
 
@@ -85,7 +89,7 @@
 
             <!-- Input de email -->
             <label for="id_email">Email</label>
-            <input type="email"  id="id_email" placeholder="Digite o seu email :">
+            <input type="email"  id="id_email" placeholder="Digite o seu email :" required>
 
        
 
@@ -93,7 +97,7 @@
 
             <!-- Input senha -->
             <label for="id_senha">Senha</label>
-            <input type="password" id="id_senha" placeholder="Digite a sua senha :">
+            <input type="password" id="id_senha" placeholder="Digite a sua senha :" required>
 
             <br><br>
 
@@ -104,6 +108,161 @@
             <hr>
 
         </form>
+
+        <h3>Tipo radio em input</h3>
+
+            <p>
+
+                O input type="radio" em HTML cria botões circulares para seleção única, onde, ao usar o mesmo atributo name, apenas uma opção pode ser escolhida dentro do grupo, sendo ideal para perguntas com múltiplas alternativas, como sexo, forma de pagamento ou preferências.
+
+                <br><br>
+
+                Para usar o radio, o tipo do input tem que ser definido como radio, ele também tem que ter um identificador unico, um name e um value. 
+
+                <br><br>
+
+                Para definir o nome na frente do radio deve se criar um label usando o atributo for com o id do input desejado. 
+
+                <br><br>
+
+                <hr>
+
+                <br>
+
+                <b>Exemplos de radio :</b>
+
+                <br><br>
+
+                <b>Escolha o meio de pagamento:</b>
+            
+
+            </p>
+
+            
+            <form>
+
+                <input type="radio" id="id_pix" name="formaPagamento" value="pix" >
+                <label for="id_pix">Pix</label><br>
+
+                <input type="radio" id="id_dinheiro" name="formaPagamento" value="dinheiro" >
+                <label for="id_dinheiro">Dinheiro</label><br>
+
+                <input type="radio" id="id_cheque" name="formaPagamento" value="cheque" >
+                <label for="id_cheque">Cheque</label><br><br>
+
+                <input type="submit" value="Enviar forma de pagamento">
+
+            </form>
+
+            <br>
+
+            <hr>
+
+        <h3>Tipo checkbox em input</h3>
+
+            <p>
+
+                O input type="checkbox" em HTML cria caixinhas que o usuário pode marcar ou desmarcar livremente, permitindo várias seleções ao mesmo tempo; cada checkbox marcado envia seu value no envio do formulário, e todos podem compartilhar o mesmo name se representarem um mesmo grupo de dados.
+
+                <b>Exemplo de checkbox :</b>
+
+
+            </p>
+
+            <b>Lista de compras</b>
+
+            <br><br>
+
+            <form >
+
+                <input type="checkbox" id="item_1" name="item_1" value="Arroz">
+                <label for="item_1">Arroz</label><br><br>    
+                
+                <input type="checkbox" id="item_2" name="item_2" value="Feijão">
+                <label for="item_2">Feijão</label><br><br>
+
+                <input type="checkbox" id="item_3" name="item_3" value="Carnes">
+                <label for="item_3">Carnes</label><br><br>
+
+                <input type="submit" value="Enviar lista de compras">
+
+ 
+            </form>
+
+            <br>
+            <hr>    
+
+        <h3>Select em formulario</h3>
+
+            <p>
+
+                O select cria um menu suspenso com várias option, permitindo ao usuário escolher uma (ou mais, se usar multiple); o valor selecionado é enviado no formulário com o nome definido pelo name. Cada option tem um value, que é o que será enviado, e um texto visível que aparece na lista.
+
+                <br><br>
+
+                Para fazer isso você deve usar o select para criar uma lista de opções, colocando várias option dentro dele; define um name no select para identificar o campo e um value em cada option para indicar o valor que será enviado quando a opção for escolhida.
+
+                <br><br>
+
+                <b>Exmplo de select : </b>
+
+            </p>
+
+            <form>
+
+                <b>Selecione a classe do seu personagem :</b>
+
+                <select name="classes">
+
+                    <option selected disabled value="">Selecione a classe</option>
+                    <option value="guerreiro">Guerreiro</option>
+                    <option value="ladrao">Ladrão</option>
+                    <option value="mago">Mago</option>
+                    <option value="arqueiro">Arqueiro</option>
+
+                </select>
+
+                <br><br>
+
+                <input type="submit" value="Definir classe">
+
+            </form>
+
+
+        <br>
+        <hr>
+        
+        <h3>Textarea em formularios :</h3>
+
+            <p>
+                
+                O textarea é usado para criar campos de texto maiores e multilinha em formulários; você define um name para identificar o campo no envio e pode controlar o tamanho com os atributos rows (linhas) e cols (colunas), além de poder escrever um texto padrão entre a abertura e o fechamento da tag.
+
+                <br><br>
+
+                <b>Exemplo de textare :</b>
+
+                
+            </p>
+
+            <form>
+
+                <b>Deixe aqui sua opção do nosso aplicativo :</b>
+
+                <br><br>
+
+                <textarea name="Área de opniões" rows="15" cols="50"></textarea>
+
+                <br><br>
+
+                <input type="submit" value="Enviar opnião">
+
+
+            </form>
+
+            <br>
+            <hr>
+
 
 
 </body>
